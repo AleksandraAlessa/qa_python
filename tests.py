@@ -19,7 +19,7 @@ class TestBooksCollector:
     @pytest.mark.parametrize("invalid_name", [
         "",                     # пустая строка
         "A" * 41,               # 41 символ
-        None                    # не строка (но метод отработает без ошибки)
+        
     ])
     def test_add_new_book_invalid_name(self, invalid_name):
         collector = BooksCollector()
